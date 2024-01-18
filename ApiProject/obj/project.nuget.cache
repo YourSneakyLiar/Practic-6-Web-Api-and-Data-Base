@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uhvhjUszPlMBxpjkkPoHwTbMMuaLwVVbkKFNMjwBxM4FoserOGUnd940JogPngSpEwaEBmVN+AC7+w8r2uc9pA==",
+  "dgSpecHash": "uLE17odAEjIH6U9RPEpkdAj+O0KJHMXzjOCAip3M/69e7O/7NhYB+rq+04CcOXVo1KGOub+h3my6yU/3vJWGxw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\elena\\source\\repos\\ApiProject\\ApiProject.csproj",
+  "projectFilePath": "C:\\Users\\elena\\Documents\\GitHub\\Practic-6-Web-Api-and-Data-Base\\ApiProject\\ApiProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elena\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\elena\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
