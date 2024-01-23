@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yiUlZPgikNsIm+TCfV6drIB71rt1K9NlLsvHMGWrLrW3DIbNiTJyxz1l4FLnsbmJtg7vyNXWgO3oVQXbKMOG9A==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\elena\\source\\repos\\WebAutoCatalogApi\\WebAutoCatalogApi.csproj",
+  "dgSpecHash": "8rBuwu0wKIq8EYgDXLnYtKceiFVZQXv0m91vMPU/0CxlRssDr1VlatVIJHvFGn+NMmVWZs+18Fy3tGUpCufXkA==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\elena\\Documents\\GitHub\\Practic-6-Web-Api-and-Data-Base\\WebAutoCatalogApi\\WebAutoCatalogApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elena\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\elena\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
@@ -54,5 +54,15 @@
     "C:\\Users\\elena\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\elena\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Не удалось найти проект \"C:\\Users\\elena\\Documents\\GitHub\\Practic-6-Web-Api-and-Data-Base\\DataAccess\\DataAccess.csproj\". Убедитесь, что ссылка на проект действительна и файл проекта существует.",
+      "libraryId": "C:\\Users\\elena\\Documents\\GitHub\\Practic-6-Web-Api-and-Data-Base\\DataAccess\\DataAccess.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }

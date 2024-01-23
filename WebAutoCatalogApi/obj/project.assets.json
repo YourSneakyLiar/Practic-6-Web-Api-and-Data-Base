@@ -869,19 +869,6 @@
             "rid": "win"
           }
         }
-      },
-      "DataAccess/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.26"
-        },
-        "compile": {
-          "bin/placeholder/DataAccess.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/DataAccess.dll": {}
-        }
       }
     }
   },
@@ -2441,16 +2428,11 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
-    },
-    "DataAccess/1.0.0": {
-      "type": "project",
-      "path": "../DataAccess/DataAccess.csproj",
-      "msbuildProject": "../DataAccess/DataAccess.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "DataAccess >= 1.0.0",
+      "C:\\Users\\elena\\Documents\\GitHub\\Practic-6-Web-Api-and-Data-Base\\DataAccess\\DataAccess.csproj",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.26",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.26",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.26",
@@ -2464,11 +2446,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elena\\source\\repos\\WebAutoCatalogApi\\WebAutoCatalogApi.csproj",
+      "projectUniqueName": "C:\\Users\\elena\\Documents\\GitHub\\Practic-6-Web-Api-and-Data-Base\\WebAutoCatalogApi\\WebAutoCatalogApi.csproj",
       "projectName": "WebAutoCatalogApi",
-      "projectPath": "C:\\Users\\elena\\source\\repos\\WebAutoCatalogApi\\WebAutoCatalogApi.csproj",
+      "projectPath": "C:\\Users\\elena\\Documents\\GitHub\\Practic-6-Web-Api-and-Data-Base\\WebAutoCatalogApi\\WebAutoCatalogApi.csproj",
       "packagesPath": "C:\\Users\\elena\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elena\\source\\repos\\WebAutoCatalogApi\\obj\\",
+      "outputPath": "C:\\Users\\elena\\Documents\\GitHub\\Practic-6-Web-Api-and-Data-Base\\WebAutoCatalogApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2489,8 +2471,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\elena\\source\\repos\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "C:\\Users\\elena\\source\\repos\\DataAccess\\DataAccess.csproj"
+            "C:\\Users\\elena\\Documents\\GitHub\\Practic-6-Web-Api-and-Data-Base\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "C:\\Users\\elena\\Documents\\GitHub\\Practic-6-Web-Api-and-Data-Base\\DataAccess\\DataAccess.csproj"
             }
           }
         }
@@ -2548,5 +2530,16 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1104",
+      "level": "Error",
+      "message": "Не удалось найти проект \"C:\\Users\\elena\\Documents\\GitHub\\Practic-6-Web-Api-and-Data-Base\\DataAccess\\DataAccess.csproj\". Убедитесь, что ссылка на проект действительна и файл проекта существует.",
+      "libraryId": "C:\\Users\\elena\\Documents\\GitHub\\Practic-6-Web-Api-and-Data-Base\\DataAccess\\DataAccess.csproj",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
 }
