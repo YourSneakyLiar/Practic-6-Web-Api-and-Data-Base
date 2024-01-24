@@ -1,0 +1,510 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NewAutoCat</name>
+    </assembly>
+    <members>
+        <member name="M:NewAutoCat.Controllers.BodyTypeController.GetAll">
+            <summary>
+            Получение всех типов кузова
+            </summary>
+            <returns>Список всех типов кузова</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.BodyTypeController.GetById(System.Int32)">
+            <summary>
+            Получение типа кузова по ID
+            </summary>
+            <param name="id">ID типа кузова</param>
+            <returns>Тип кузова с указанным ID</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.BodyTypeController.Add(NewAutoCat.Contracts.BodyType.CreateBodyTypeRec)">
+            <summary>
+            Добавление нового типа кузова
+            </summary>
+            <param name="bodytype">Новый тип кузова</param>
+            <returns>Результат добавления типа кузова</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.BodyTypeController.Update(NewAutoCat.Models.BodyType)">
+            <summary>
+            Обновление существующего типа кузова
+            </summary>
+            <param name="bodytype">Тип кузова для обновления</param>
+            <returns>Результат обновления типа кузова</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.BodyTypeController.Delete(System.Int32)">
+            <summary>
+            Удаление типа кузова по ID
+            </summary>
+            <param name="id">ID типа кузова</param>
+            <returns>Результат удаления типа кузова</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.CarController.GetAll">
+            <summary>
+            Получение всех автомобилей
+            </summary>
+            <returns>Список всех автомобилей</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.CarController.GetById(System.Int32)">
+            <summary>
+            Получение автомобиля по ID
+            </summary>
+            <param name="id">ID автомобиля</param>
+            <returns>Автомобиль с указанным ID</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.CarController.Add(NewAutoCat.Contracts.Car.CreateCarRec)">
+             <summary>
+             Добавление нового автомобиля
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Car
+                 {
+                    "CarId" : "456",
+                    "CreatedBy" : "123",
+                    "CreatedAt" : "22.01.2024",
+                    "DeletedBy" : "789",
+                    "DeletedAt" : "23.01.2024",
+                    "IdChar" : "1",
+                    "StampId" : "2",
+                    "Model" : "Tesla Model S",
+                    "DateOfRelease" : "24.01.2024",
+                    "BodyTypeId" : "3"
+                 }
+            
+             </remarks>
+             <param name="car">Новый автомобиль</param>
+             <returns>Результат добавления автомобиля</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.CarController.Update(NewAutoCat.Models.Car)">
+            <summary>
+            Обновление существующего автомобиля
+            </summary>
+            <param name="car">Автомобиль для обновления</param>
+            <returns>Результат обновления автомобиля</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.CarController.Delete(System.Int32)">
+            <summary>
+            Удаление автомобиля по ID
+            </summary>
+            <param name="id">ID автомобиля</param>
+            <returns>Результат удаления автомобиля</returns>
+            
+        </member>
+        <member name="M:NewAutoCat.Controllers.CharacteristicController.GetAll">
+            <summary>
+            Получение всех характеристик
+            </summary>
+            <returns>Список всех характеристик</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.CharacteristicController.GetById(System.Int32)">
+            <summary>
+            Получение характеристики по ID
+            </summary>
+            <param name="id">ID характеристики</param>
+            <returns>Характеристика с указанным ID</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.CharacteristicController.Add(NewAutoCat.Contracts.Characteristic.CreateCharRec)">
+            <summary>
+            Добавление новой характеристики
+            </summary>
+            <param name="charac">Новая характеристика</param>
+            <returns>Результат добавления характеристики</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.CharacteristicController.Update(NewAutoCat.Models.Characteristic)">
+            <summary>
+            Обновление существующей характеристики
+            </summary>
+            <param name="charac">Характеристика для обновления</param>
+            <returns>Результат обновления характеристики</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.CharacteristicController.Delete(System.Int32)">
+            <summary>
+            Удаление характеристики по ID
+            </summary>
+            <param name="id">ID характеристики</param>
+            <returns>Результат удаления характеристики</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.CommentController.GetAll">
+            <summary>
+            Получение всех комментариев
+            </summary>
+            <returns>Список всех комментариев</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.CommentController.GetById(System.Int32)">
+            <summary>
+            Получение комментария по ID
+            </summary>
+            <param name="id">ID комментария</param>
+            <returns>Комментарий с указанным ID</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.CommentController.Add(NewAutoCat.Contracts.Comment.CreateCommentRec)">
+            <summary>
+            Добавление нового комментария
+            </summary>
+            <param name="com">Новый комментарий</param>
+            <returns>Результат добавления комментария</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.CommentController.Update(NewAutoCat.Models.Comment)">
+            <summary>
+            Обновление существующего комментария
+            </summary>
+            <param name="com">Комментарий для обновления</param>
+            <returns>Результат обновления комментария</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.CommentController.Delete(System.Int32)">
+            <summary>
+            Удаление комментария по ID
+            </summary>
+            <param name="id">ID комментария</param>
+            <returns>Результат удаления комментария</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.ExpertController.GetAll">
+            <summary>
+            Получение всех экспертов
+            </summary>
+            <returns>Список всех экспертов</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.ExpertController.GetById(System.Int32)">
+            <summary>
+            Получение эксперта по ID
+            </summary>
+            <param name="id">ID эксперта</param>
+            <returns>Эксперт с указанным ID</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.ExpertController.Add(NewAutoCat.Contracts.Expert.CreateExpert)">
+            <summary>
+            Добавление нового эксперта
+            </summary>
+            <param name="exper">Новый эксперт</param>
+            <returns>Результат добавления эксперта</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.ExpertController.Update(NewAutoCat.Models.Expert)">
+            <summary>
+            Обновление существующего эксперта
+            </summary>
+            <param name="exper">Эксперт для обновления</param>
+            <returns>Результат обновления эксперта</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.ExpertController.Delete(System.Int32)">
+            <summary>
+            Удаление эксперта по ID
+            </summary>
+            <param name="id">ID эксперта</param>
+            <returns>Результат удаления эксперта</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.FeedBackController.GetAll">
+            <summary>
+            Получение всех отзывов
+            </summary>
+            <returns>Список всех оценок</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.FeedBackController.GetById(System.Int32)">
+            <summary>
+            Получение отзыва по ID
+            </summary>
+            <param name="id">ID отзыва</param>
+            <returns>Оценка с указанным ID</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.FeedBackController.Add(NewAutoCat.Contracts.FeedBack.CreateFeedBack)">
+            <summary>
+            Добавление нового отзыва
+            </summary>
+            <param name="feedBack">Новый отзыв</param>
+            <returns>Результат добавления оценки</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.FeedBackController.Update(NewAutoCat.Models.FeedBack)">
+            <summary>
+            Обновление существующего отзыва
+            </summary>
+            <param name="feedBack">Отзыв для обновления</param>
+            <returns>Результат обновления оценки</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.FeedBackController.Delete(System.Int32)">
+            <summary>
+            Удаление отзыва по ID
+            </summary>
+            <param name="id">ID отзыва</param>
+            <returns>Результат удаления оценки</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.NewsController.GetAll">
+            <summary>
+            Получение всех новостей
+            </summary>
+            <returns>Список всех новостей</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.NewsController.GetById(System.Int32)">
+            <summary>
+            Получение новости по ID
+            </summary>
+            <param name="id">ID новости</param>
+            <returns>Новость с указанным ID</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.NewsController.Add(NewAutoCat.Contracts.News.CreateNews)">
+            <summary>
+            Добавление новой новости
+            </summary>
+            <param name="newss">Новая новость</param>
+            <returns>Результат добавления новости</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.NewsController.Update(NewAutoCat.Models.News)">
+            <summary>
+            Обновление существующей новости
+            </summary>
+            <param name="newss">Новость для обновления</param>
+            <returns>Результат обновления новости</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.NewsController.Delete(System.Int32)">
+            <summary>
+            Удаление новости по ID
+            </summary>
+            <param name="id">ID новости</param>
+            <returns>Результат удаления новости</returns>
+            
+        </member>
+        <member name="M:NewAutoCat.Controllers.RecommendationController.GetAll">
+            <summary>
+            Получение всех рекомендаций
+            </summary>
+            <returns>Список всех рекомендаций</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.RecommendationController.GetById(System.Int32)">
+            <summary>
+            Получение рекомендации по ID
+            </summary>
+            <param name="id">ID рекомендации</param>
+            <returns>Рекомендация с указанным ID</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.RecommendationController.Add(NewAutoCat.Contracts.Recommendation.CreateRecomm)">
+            <summary>
+            Добавление новой рекомендации
+            </summary>
+            <param name="recs">Новая рекомендация</param>
+            <returns>Результат добавления рекомендации</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.RecommendationController.Update(NewAutoCat.Models.Recommendation)">
+            <summary>
+            Обновление существующей рекомендации
+            </summary>
+            <param name="recs">Рекомендация для обновления</param>
+            <returns>Результат обновления рекомендации</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.RecommendationController.Delete(System.Int32)">
+            <summary>
+            Удаление рекомендации по ID
+            </summary>
+            <param name="id">ID рекомендации</param>
+            <returns>Результат удаления рекомендации</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.ReviewController.GetAll">
+            <summary>
+            Получение всех обзоров
+            </summary>
+            <returns>Список всех обзоров</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.ReviewController.GetById(System.Int32)">
+            <summary>
+            Получение обзора по ID
+            </summary>
+            <param name="id">ID обзора</param>
+            <returns>Обзор с указанным ID</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.ReviewController.Add(NewAutoCat.Contracts.Review.CreateRev)">
+             <summary>
+             Добавление нового обзора
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Review
+                 {
+                    "ReviewId" : "1",
+                    "ReviewText" : "Отличный автомобиль!",
+                    "UserId" : "123",
+                    "CarId" : "456",
+                    "DateOfReview":"22.01.2024"
+                 }
+            
+             </remarks>
+             <param name="revi">Новый обзор</param>
+             <returns>Результат добавления обзора</returns>
+             
+        </member>
+        <member name="M:NewAutoCat.Controllers.ReviewController.Update(NewAutoCat.Models.Review)">
+            <summary>
+            Обновление существующего обзора
+            </summary>
+            <param name="revi">Обзор для обновления</param>
+            <returns>Результат обновления обзора</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.ReviewController.Delete(System.Int32)">
+            <summary>
+            Удаление обзора по ID
+            </summary>
+            <param name="id">ID обзора</param>
+            <returns>Результат удаления обзора</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.RoleControllers.GetAll">
+            <summary>
+            Получение всех ролей
+            </summary>
+            <returns>Список всех ролей</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.RoleControllers.GetById(System.Int32)">
+            <summary>
+            Получение роли по ID
+            </summary>
+            <param name="id">ID роли</param>
+            <returns>Роль с указанным ID</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.RoleControllers.Add(NewAutoCat.Contracts.Role.CreateRoleRequestcs)">
+             <summary>
+             Добавление новой роли
+             </summary>
+              Пример запроса:
+            
+                 POST /Todo
+                 {
+                   
+                    "name" : "Администратор",
+                    "roleId":"6"
+                    
+                 }
+             <param name="roles">Новая роль</param>
+             <returns>Результат добавления роли</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.RoleControllers.Update(NewAutoCat.Models.UserRole)">
+            <summary>
+            Обновление существующей роли
+            </summary>
+            <param name="roles">Роль для обновления</param>
+            <returns>Результат обновления роли</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.RoleControllers.Delete(System.Int32)">
+            <summary>
+            Удаление роли по ID
+            </summary>
+            <param name="id">ID роли</param>
+            <returns>Результат удаления роли</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.StampController.GetAll">
+            <summary>
+            Получение всех марок
+            </summary>
+            <returns>Список всех марок</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.StampController.GetById(System.Int32)">
+            <summary>
+            Получение марки по ID
+            </summary>
+            <param name="id">ID марки</param>
+            <returns>Марка с указанным ID</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.StampController.Add(NewAutoCat.Contracts.Stamp.CreateStampRec)">
+            <summary>
+            Добавление новой марки
+            </summary>
+            <param name="stamp">Новая марка</param>
+            <returns>Результат добавления марки</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.StampController.Update(NewAutoCat.Models.Stamp)">
+            <summary>
+            Обновление существующей марки
+            </summary>
+            <param name="stamp">Марка для обновления</param>
+            <returns>Результат обновления марки</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.StampController.Delete(System.Int32)">
+            <summary>
+            Удаление марки по ID
+            </summary>
+            <param name="id">ID марки</param>
+            <returns>Результат удаления марки</returns>
+            
+        </member>
+        <member name="M:NewAutoCat.Controllers.TestDController.GetAll">
+            <summary>
+            Получение всех тест-драйвов
+            </summary>
+            <returns>Список всех тест-драйвов</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.TestDController.GetById(System.Int32)">
+            <summary>
+            Получение тест-драйва по ID
+            </summary>
+            <param name="id">ID тест-драйва</param>
+            <returns>Тест-драйв с указанным ID</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.TestDController.Add(NewAutoCat.Contracts.TestDrive.CreateTestRec)">
+            <summary>
+            Добавление нового тест-драйва
+            </summary>
+            <param name="testd">Новый тест-драйв</param>
+            <returns>Результат добавления тест-драйва</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.TestDController.Update(NewAutoCat.Models.TestDrife)">
+            <summary>
+            Обновление существующего тест-драйва
+            </summary>
+            <param name="testd">Тест-драйв для обновления</param>
+            <returns>Результат обновления тест-драйва</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.TestDController.Delete(System.Int32)">
+            <summary>
+            Удаление тест-драйва по ID
+            </summary>
+            <param name="id">ID тест-драйва</param>
+            <returns>Результат удаления тест-драйва</returns>
+            
+        </member>
+        <member name="M:NewAutoCat.Controllers.UsersControllercs.GetAll">
+            <summary>
+            Получение всех пользователей
+            </summary>
+            <returns>Список всех пользователей</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.UsersControllercs.GetById(System.Int32)">
+            <summary>
+            Получение пользователя по ID
+            </summary>
+            <param name="id">ID пользователя</param>
+            <returns>Пользователь с указанным ID</returns>
+            
+        </member>
+        <member name="M:NewAutoCat.Controllers.UsersControllercs.Add(NewAutoCat.Contracts.User.CreateUserRequestcs)">
+             <summary>
+             Создание нового пользователя
+             </summary>
+             <remarks>
+             Пример запроса:
+            
+                 POST /Todo
+                 {
+                    
+                    "password" : "!Pa$$word123@",
+                    "nickname" : "Иван",
+                    "email" : "Иванович@gmail.com",
+                    "DateOfRegistration":"22.01.2024"
+                 }
+            
+             </remarks>
+             <param name="model">Пользователь</param>
+             <returns></returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.UsersControllercs.Update(NewAutoCat.Models.User)">
+            <summary>
+            Обновление существующего пользователя
+            </summary>
+            <param name="user">Пользователь для обновления</param>
+            <returns>Результат обновления пользователя</returns>
+        </member>
+        <member name="M:NewAutoCat.Controllers.UsersControllercs.Delete(System.Int32)">
+            <summary>
+            Удаление пользователя по ID
+            </summary>
+            <param name="id">ID пользователя</param>
+            <returns>Результат удаления пользователя</returns>
+            
+        </member>
+    </members>
+</doc>
