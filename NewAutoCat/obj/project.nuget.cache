@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "D7sMRmn2J8afWSodYSgfaXJRMtkZM/KoYgcd2uWpXAzvGU+QqWVWwRjElOgGk+srEb7/wFpkwme5He9z4tRygQ==",
+  "dgSpecHash": "JKfJ9Mg0RXqpfy0XTr1v0Ju7YPhdls/SB2GfT6Ve6mgHqYvnCd+Gwhju5XI76hcCX1P336nql0Am3FNb6oo5UQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\elena\\source\\repos\\NewAutoCat\\NewAutoCat.csproj",
+  "projectFilePath": "C:\\Users\\elena\\Documents\\GitHub\\Practic-6-Web-Api-and-Data-Base\\NewAutoCat\\NewAutoCat.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\elena\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\elena\\.nuget\\packages\\mapster\\6.5.1\\mapster.6.5.1.nupkg.sha512",

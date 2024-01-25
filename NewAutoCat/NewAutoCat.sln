@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решен
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWebServer", "..\BlazorWebServer\BlazorWebServer.csproj", "{25443217-28E3-4BEB-AA33-67362583A118}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -26,6 +28,10 @@ Global
 		{0435987F-0DCA-4CAF-9B68-EEF1A9BD3BE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0435987F-0DCA-4CAF-9B68-EEF1A9BD3BE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0435987F-0DCA-4CAF-9B68-EEF1A9BD3BE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25443217-28E3-4BEB-AA33-67362583A118}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25443217-28E3-4BEB-AA33-67362583A118}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25443217-28E3-4BEB-AA33-67362583A118}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25443217-28E3-4BEB-AA33-67362583A118}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

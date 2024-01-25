@@ -1,0 +1,58 @@
+﻿@page "/stamp-list"
+@using Microsoft.EntityFrameworkCore;
+@inject AuotoCatologContext context
+
+<style>
+    .stamps-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .stamp {
+        flex: 1 0 30%; /* Занимает 30% строки, но может сжиматься до 0 и растягиваться */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: darkgreen;
+        color: white;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        color: darkgreen;
+        margin-bottom: 20px;
+    }
+</style>
+
+<h3 class="title">Мы сотрудничаем</h3>
+
+<div class="stamps-container">
+    @foreach (var stamp in stams)
+    {
+        <div class="stamp">
+            <h4>@stamp.StampName</h4>
+        </div>
+    }
+</div>
+
+@code {
+    private List<Stamp> stams = new List<Stamp>();
+
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        stams = await context.Stamps.ToListAsync();
+
+    }
+
+}

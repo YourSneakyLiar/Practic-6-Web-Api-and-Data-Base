@@ -4529,11 +4529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elena\\source\\repos\\NewAutoCat\\NewAutoCat.csproj",
+      "projectUniqueName": "C:\\Users\\elena\\Documents\\GitHub\\Practic-6-Web-Api-and-Data-Base\\NewAutoCat\\NewAutoCat.csproj",
       "projectName": "NewAutoCat",
-      "projectPath": "C:\\Users\\elena\\source\\repos\\NewAutoCat\\NewAutoCat.csproj",
+      "projectPath": "C:\\Users\\elena\\Documents\\GitHub\\Practic-6-Web-Api-and-Data-Base\\NewAutoCat\\NewAutoCat.csproj",
       "packagesPath": "C:\\Users\\elena\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elena\\source\\repos\\NewAutoCat\\obj\\",
+      "outputPath": "C:\\Users\\elena\\Documents\\GitHub\\Practic-6-Web-Api-and-Data-Base\\NewAutoCat\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

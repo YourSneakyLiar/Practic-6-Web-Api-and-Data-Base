@@ -1,0 +1,66 @@
+﻿@page "/rec-list"
+@using Microsoft.EntityFrameworkCore;
+@inject AuotoCatologContext context
+
+<style>
+    .rec-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+
+    .rec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: #98FB98;
+        color: black;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    .title {
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        color: darkgreen;
+        margin-bottom: 20px;
+    }
+</style>
+
+<h3 class="title">Рекомендации от Экспертов</h3>
+
+<div class="rec-container">
+    @foreach (var recomm in recs)
+    {
+        <div class="rec">
+            <h9>@experts.FirstOrDefault(experts => experts.ExpertId == recomm.ExpertId)?.ExpertName</h9>
+            <hr />
+            <h8>Модель автомобиля: <h9>@cars.FirstOrDefault(cars => cars.CarId == recomm.CarId)?.Model</h9> </h8>
+            <hr />
+            <h7>@recomm.RecommendationText</h7>
+        </div>
+    }
+</div>
+@code {
+    private List<Recommendation> recs = new List<Recommendation>();
+    private List<BlazorWebServer.Models.Expert> experts = new List<BlazorWebServer.Models.Expert>();
+    private List<Car> cars = new List<Car>();
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        cars = await context.Cars.ToListAsync();
+        recs = await context.Recommendations.ToListAsync();
+        experts = await context.Experts.ToListAsync();
+    }
+
+
+
+
+
+}

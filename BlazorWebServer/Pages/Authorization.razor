@@ -1,0 +1,62 @@
+﻿@page "/Auto-list"
+@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
+@inject AuotoCatologContext context
+
+
+<link href="css/site.css" rel="stylesheet" />
+
+<h3>Авторизация</h3>
+
+<hr />
+
+@if (!IsLoginSuccessful)
+{
+    <div style="margin-bottom: 10px;">
+        <h4>Email: </h4>
+        <input type="email" class="form-control" placeholder="Enter email" @bind-value="Email" />
+    </div>
+
+    <div style="margin-bottom: 10px;">
+        <h4>Password: </h4>
+        <input type="password" class="form-control" placeholder="Enter password" @bind-value="Password" />
+    </div>
+
+    <button class="btn btn-primary" @onclick="Login">Войти</button>
+
+    @if (!string.IsNullOrEmpty(ErrorMessage))
+    {
+        <div style="margin-top: 10px;" class="alert alert-danger">@ErrorMessage</div>
+    }
+}
+else
+{
+    <div class="margin-top: 10px; alert alert-success">Вы успешно авторизировались</div>
+}
+
+@code {
+    private string Email { get; set; }
+    private string Password { get; set; }
+    private string ErrorMessage { get; set; }
+    private bool IsLoginSuccessful { get; set; }
+
+    private async Task Login()
+    {
+        if (string.IsNullOrEmpty(Email) || string.IsNullOrEmpty(Password))
+        {
+            ErrorMessage = "Все поля должны быть заполнены.";
+            return;
+        }
+
+        var user = context.Users.FirstOrDefault(u => u.Email == Email && u.UserPassword == Password);
+        if (user == null)
+        {
+            ErrorMessage = "Неверный email или пароль.";
+            return;
+        }
+
+        // Здесь можно добавить логику для сохранения состояния авторизации, например, через сессии или куки
+
+        IsLoginSuccessful = true;
+    }
+}

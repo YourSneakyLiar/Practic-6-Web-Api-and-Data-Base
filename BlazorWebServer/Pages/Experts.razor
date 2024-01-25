@@ -1,0 +1,62 @@
+﻿@page "/expert-list"
+@using Microsoft.EntityFrameworkCore;
+@inject AuotoCatologContext context
+
+<style>
+    .experts-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .expert {
+        border: 1px solid black;
+        margin: 10px;
+        padding: 10px;
+        background-color: darkgreen;
+        color: white;
+    }
+
+    .title {
+        text-align: center;
+        font-size: 2em;
+        font-weight: bold;
+        color: darkgreen;
+        margin-bottom: 20px;
+    }
+</style>
+
+<h3 class="title">Наши эксперты</h3>
+
+<div class="experts-container">
+    @foreach (var expr in exp)
+    {
+        <div class="expert">
+            <h4>@expr.ExpertName</h4>
+            <h6>Специализация: @expr.Specialization</h6>
+            <h7>Контактная информация: <a href="mailto:@expr.Email">@expr.Email</a></h7>
+            <h8>Рейтинг: @expr.Rating </h8>
+        </div>
+    }
+</div>
+
+
+@code {
+    private List<Expert> exp = new List<Expert>();
+
+
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        exp = await context.Experts.ToListAsync();
+
+    }
+
+
+
+
+
+}
+
